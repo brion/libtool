@@ -5630,6 +5630,12 @@ _LT_EOF
       _LT_TAGVAR(hardcode_shlibpath_var, $1)=no
       ;;
 
+    emscripten*)
+      # emscripten C/C++ environment for JavaScript target
+      # Tell ltmain to make .bc files, not .a files.
+      libext=bc
+      ;;
+
     # FreeBSD 2.2.[012] allows us to include c++rt0.o to get C++ constructor
     # support.  Future versions do this automatically, but an explicit c++rt0.o
     # does not break anything, and helps significantly (at the cost of a little
